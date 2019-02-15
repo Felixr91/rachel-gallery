@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <navigation></navigation>
     <div class="d-flex justify-content-center" style="margin-top: 80px;">
       <div class="card-columns" style="width: 95%">
         <div v-for="image in Images" v-bind:key="image.name" class="d-flex justify-content-center">

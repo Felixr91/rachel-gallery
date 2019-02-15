@@ -8,6 +8,7 @@ export default new Vuex.Store({
     Images: [
       { url: "https://i.imgur.com/IGuIXQ7.jpg", alt: "You cant undo this", description: "Square thing", name: "Knots" },
       { url: "https://i.imgur.com/lCK0ZMw.jpg", alt: "It's all a game", description: "Square thing", name: "It's all a game" },
+      { url: "https://i.imgur.com/WlFwjqZ.png", alt: 'horsetheif', description: "knots and thieves", name: "uewrwu" },
       { url: "https://i.imgur.com/zrfmwze.jpg", alt: 'Ants comic', description: "Long comic", name: "Ants" },
       { url: "https://i.imgur.com/hsJzWCk.jpg", alt: 'Braids', description: "Braid comic", name: "Braids" },
       { url: "https://i.imgur.com/BDRpfva.jpg", alt: 'horsetheif', description: "knots and thieves", name: "fjadskf" },
@@ -22,7 +23,6 @@ export default new Vuex.Store({
       { url: "https://i.imgur.com/Tu4jOZ9.jpg", alt: 'horsetheif', description: "knots and thieves", name: "hasdafh" },
       { url: "https://i.imgur.com/GkCR1AH.jpg", alt: 'horsetheif', description: "knots and thieves", name: "zcxvnz" },
       { url: "https://i.imgur.com/Erq6dBq.jpg", alt: 'horsetheif', description: "knots and thieves", name: "vcz" },
-      { url: "https://i.imgur.com/WlFwjqZ.png", alt: 'horsetheif', description: "knots and thieves", name: "uewrwu" },
     ]
     // images: [
     //   "/img/0-2.97047606.jpg",
