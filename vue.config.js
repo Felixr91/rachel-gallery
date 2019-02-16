@@ -1,13 +1,10 @@
 module.exports = {
-  // publicPath: process.env.NODE_ENV === 'production'
-  //   ? '/rachel-gallery/'
-  //   : '/',
-
-  baseUrl: '/rachel-gallery',
-  outputDir: 'docs',
+  publicPath: '/rachel-gallery',
+  outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
   parallel: undefined,
-  css: undefined
+  css: undefined,
+  baseUrl: '/rachel-gallery'
 }
