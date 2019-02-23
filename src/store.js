@@ -23,6 +23,13 @@ export default new Vuex.Store({
       { url: "https://i.imgur.com/Tu4jOZ9.jpg", alt: 'horsetheif', description: "knots and thieves", name: "hasdafh" },
       { url: "https://i.imgur.com/GkCR1AH.jpg", alt: 'horsetheif', description: "knots and thieves", name: "zcxvnz" },
       { url: "https://i.imgur.com/Erq6dBq.jpg", alt: 'horsetheif', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/DlH8yFi.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/2pEYGFS.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/8xu4a82.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/zvUxxuZ.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/Kgo8SxM.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/KVN2vMQ.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
+      { url: "https://i.imgur.com/BAVyCyj.jpg", alt: 'moth', description: "knots and thieves", name: "vcz" },
     ]
     // images: [
     //   "/img/0-2.97047606.jpg",

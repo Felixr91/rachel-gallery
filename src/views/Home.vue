@@ -5,7 +5,7 @@
       <div class="card-columns" style="width: 95%">
         <div v-for="image in Images" v-bind:key="image.name" class="d-flex justify-content-center">
           <div class="col pl-0 pr-0">
-            <div class="card" v-b-modal="'myModal' + image.name" cancel-variant>
+            <div class="card" style="border:none;" v-b-modal="'myModal' + image.name" cancel-variant>
               <img class="card-img-top" :src="image.url">
             </div>
             <!-- Modal Component -->
@@ -53,5 +53,15 @@
     .modal-dialog {
       max-width: 70vw !important;
     }
+  }
+
+  .card {
+
+    border-radius: 0 !important;
+  }
+
+  .card-img-top {
+
+    border-radius: 0 !important;
   }
 </style>
