@@ -1,14 +1,24 @@
 <template>
   <div style="height: 100vh;">
-    <div class="row container-fluid ml-0 mr-0" style="height: 40vh;">
-      <div class="rachel col-12 col-md-12 col-lg-12">
-        <span class="raleway">R A C H E L</span>
+    <div class="row container-fluid ml-0 mr-0 pt-3 d-flex align-items-center" style="height: 10vh;">
+      <div class="col-4 d-flex p5-2">
+        <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
       </div>
-      <div class="hays col-12 col-md-12 col-lg-12 d-flex justify-content-center">
-        <span class="raleway">H A Y S</span>
+      <div class="col-2">
+        <p>Illustration</p>
       </div>
+      <div class="col-2">
+        <p>Shop</p>
+      </div>
+      <div class="col-2">
+        <p>Comics</p>
+      </div>
+      <div class="col-2">
+        <p>About</p>
+      </div>
+
     </div>
-    <div class="row container-fluid ml-0 mr-0">
+    <div class="row container-fluid ml-0 mr-0" style="height: 90vh;">
       <div class="col-12 pt-3 handdiv">
         <!-- <img src="../assets/naturalmythologystamphands.png" class="image hands-size" alt=""> -->
       </div>
@@ -106,7 +116,7 @@
 
   @media only screen and (min-width: 720px) {
     .handdiv {
-      height: 60vh;
+      /* height: 60vh; */
       background-repeat: no-repeat;
       background-size: 80vw;
       background-image: url("../assets/naturalmythologystamphands.png");
@@ -117,7 +127,7 @@
 
   @media only screen and (max-width: 719px) {
     .handdiv {
-      height: 60vh;
+      /* height: 60vh; */
       background-repeat: no-repeat;
       background-size: 300px;
       background-image: url("../assets/handforwebsite.jpeg");
@@ -130,6 +140,12 @@
   }
 
   @media only screen and (max-width: 500px) {
+    .handdiv {
+      background-size: 60%;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
     .handdiv {
       background-size: 60%;
     }
