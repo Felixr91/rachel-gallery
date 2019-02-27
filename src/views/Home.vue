@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <navigation></navigation>
+    <!-- <navigation></navigation> -->
+    <heroImage></heroImage>
     <div class="d-flex justify-content-center" style="margin-top: 80px;">
       <div class="card-columns" style="width: 95%">
         <div v-for="image in Images" v-bind:key="image.name" class="d-flex justify-content-center">
@@ -26,11 +27,13 @@
   // @ is an alias to /src
   import HomeComponent from '@/components/HomeComponent.vue'
   import navigation from '@/components/navigation.vue'
+  import heroImage from '@/components/heroImage.vue'
 
   export default {
     name: 'home',
     components: {
-      HomeComponent
+      HomeComponent,
+      heroImage
     },
     mounted() {
       let arr = this.$store.dispatch('getImages')
@@ -56,7 +59,6 @@
   }
 
   .card {
-
     border-radius: 0 !important;
   }
 

@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <navigation></navigation>
+    <!-- <heroImage></heroImage> -->
     <router-view />
   </div>
 </template>
 
 <script>
   import navigation from '@/components/navigation.vue'
+  import heroImage from '@/components/heroImage.vue'
+  // import aboutRachel from '@/components/AboutRachel.vue'
+
   export default {
     name: 'app',
     components: {
-      navigation
+      navigation,
+      heroImage,
+      // aboutRachel
     }
   }
 

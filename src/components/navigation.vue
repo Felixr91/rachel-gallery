@@ -1,31 +1,52 @@
 <template>
-  <div style="height: 100vh;">
-    <div class="row container-fluid ml-0 mr-0 pt-3 d-flex align-items-center" style="height: 10vh;">
-      <div class="col-4 d-flex p5-2">
-        <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
+  <div>
+    <!-- large navbar -->
+    <div class="navbar-toggle-large">
+      <div class="row container-fluid ml-0 mr-0 pt-3 d-flex align-items-center">
+        <div class="col-4 d-flex" @click="goHome()">
+          <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
+        </div>
+        <div class="col-2">
+          <p>Illustration</p>
+        </div>
+        <div class="col-2">
+          <p>Shop</p>
+        </div>
+        <div class="col-2">
+          <p>Comics</p>
+        </div>
+        <a class="col-2" @click="goAbout()">
+          <p>About</p>
+        </a>
       </div>
-      <div class="col-2">
-        <p>Illustration</p>
-      </div>
-      <div class="col-2">
-        <p>Shop</p>
-      </div>
-      <div class="col-2">
-        <p>Comics</p>
-      </div>
-      <div class="col-2">
-        <p>About</p>
-      </div>
+    </div>
 
-    </div>
-    <div class="row container-fluid ml-0 mr-0" style="height: 90vh;">
-      <div class="col-12 pt-3 handdiv">
-        <!-- <img src="../assets/naturalmythologystamphands.png" class="image hands-size" alt=""> -->
+
+    <!-- Navbar Small -->
+    <div class="navbar-toggle-small">
+      <div class="pos-f-t" id="nav-small">
+        <nav class="navbar navbar-light bg-light">
+          <div class="col-m-6" @click="goHome()">
+            <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4 d-flex justify-content-around" style="align-items: flex-end; color: white;">
+            <span>Home</span>
+            <span>Portfolio</span>
+            <span @click="goAbout()">About</span>
+            <span>Contact</span>
+          </div>
+        </div>
       </div>
     </div>
+
+
   </div>
-  <!-- <p class="mt-3"><a href="#about-jump" class="text-decor">About</a></p> -->
-  <!-- <p><a href="https://www.naturalmythology.com/products" class="text-decor">Shop</a></p> -->
 </template>
 
 <script>
@@ -37,7 +58,14 @@
       }
     },
     computed: {},
-    methods: {}
+    methods: {
+      goAbout() {
+        this.$store.dispatch("goAbout");
+      },
+      goHome() {
+        this.$store.dispatch("goHome");
+      }
+    }
   }
 
 </script>
@@ -114,25 +142,10 @@
     }
   }
 
-  @media only screen and (min-width: 720px) {
-    .handdiv {
-      /* height: 60vh; */
-      background-repeat: no-repeat;
-      background-size: 80vw;
-      background-image: url("../assets/naturalmythologystamphands.png");
-      background-position: center;
-    }
-  }
 
 
   @media only screen and (max-width: 719px) {
-    .handdiv {
-      /* height: 60vh; */
-      background-repeat: no-repeat;
-      background-size: 300px;
-      background-image: url("../assets/handforwebsite.jpeg");
-      background-position: center;
-    }
+
 
     .rachel {
       margin-top: 50px !important;
@@ -149,5 +162,22 @@
     .handdiv {
       background-size: 60%;
     }
+  }
+
+  @media only screen and (min-width: 799px) {
+    .navbar-toggle-small {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .navbar-toggle-large {
+      display: none;
+    }
+  }
+
+  /* bootstrap navbar css */
+  .navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
   }
 </style>
