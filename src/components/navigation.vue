@@ -4,20 +4,32 @@
     <div class="navbar-toggle-large">
       <div class="row container-fluid ml-0 mr-0 pt-3 d-flex align-items-center">
         <div class="col-4 d-flex" @click="goHome()">
-          <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
+          <a href="#" style="text-decoration: none; color: black;">
+            <p class="nav-name">R A C H E L &nbsp; H A Y S</p>
+          </a>
         </div>
         <div class="col-2">
           <p>Illustration</p>
         </div>
         <div class="col-2">
-          <p>Shop</p>
+          <a href="https://www.naturalmythology.com/products" target="_blank"
+            style="text-decoration: none; color: black;">
+            <p>Shop</p>
+          </a>
         </div>
         <div class="col-2">
           <p>Comics</p>
         </div>
         <a class="col-2" @click="goAbout()">
-          <p>About</p>
+          <a href="#" style="text-decoration: none; color: black;">
+            <p>About</p>
+          </a>
         </a>
+        <!-- <a class="col-2" @click="goAbout()">
+          <a href="#" style="text-decoration: none; color: black;">
+            <p>Contact</p>
+          </a>
+        </a> -->
       </div>
     </div>
 
@@ -25,9 +37,9 @@
     <!-- Navbar Small -->
     <div class="navbar-toggle-small">
       <div class="pos-f-t" id="nav-small">
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light">
           <div class="col-m-6" @click="goHome()">
-            <p style="font-size: 1.5rem;">R A C H E L &nbsp; H A Y S</p>
+            <p class="nav-name-small">R A C H E L &nbsp; H A Y S</p>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,17 +47,15 @@
           </button>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4 d-flex justify-content-around" style="align-items: flex-end; color: white;">
-            <span>Home</span>
-            <span>Portfolio</span>
+          <div class="bg-light p-4 d-flex justify-content-around" style="align-items: flex-end; color: black;">
+            <span>Illustration</span>
+            <a href="https://www.naturalmythology.com/products" target="_blank"> <span>Shop</span></a>
+            <span>Comics</span>
             <span @click="goAbout()">About</span>
-            <span>Contact</span>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -71,6 +81,20 @@
 </script>
 
 <style>
+  a {
+    color: inherit;
+  }
+
+  .nav-name-small {
+    font-size: 1.5rem;
+    margin-bottom: 0px !important;
+    padding-top: 3px;
+  }
+
+  .nav-name {
+    font-size: 1.5rem;
+  }
+
   .raleway {
     font-family: 'Raleway', sans-serif;
   }
@@ -142,8 +166,6 @@
     }
   }
 
-
-
   @media only screen and (max-width: 719px) {
 
 
@@ -164,16 +186,20 @@
     }
   }
 
-  @media only screen and (min-width: 799px) {
+  @media only screen and (min-width: 819px) {
     .navbar-toggle-small {
       display: none;
     }
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 820px) {
     .navbar-toggle-large {
       display: none;
     }
+  }
+
+  .close {
+    color: white !important;
   }
 
   /* bootstrap navbar css */

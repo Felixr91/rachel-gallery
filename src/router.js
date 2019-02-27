@@ -4,6 +4,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 // @ts-ignore
 import aboutRachel from './views/AboutRachel.vue'
+//@ts-ignore
+import comics from './views/Comics.vue'
 
 Vue.use(Router)
 

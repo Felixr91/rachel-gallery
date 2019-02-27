@@ -10,9 +10,11 @@
               <img class="card-img-top" :src="image.url">
             </div>
             <!-- Modal Component -->
-            <b-modal :id="'myModal' + image.name" title="Rachel's Photo">
+            <b-modal :id="'myModal' + image.name">
               <img class="card-img-top" :src="image.url">
-              <p class="my-4">Hello from modal!</p>
+              <p class="my-4">{{image.name}}</p>
+              <p class="my-4"><i>{{image.description}}</i></p>
+              <p class="my-4">{{image.type}}</p>
             </b-modal>
           </div>
         </div>
@@ -65,5 +67,14 @@
   .card-img-top {
 
     border-radius: 0 !important;
+  }
+
+  .modal-header {
+    border-bottom: 0px !important;
+  }
+
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.411) !important;
+    color: white;
   }
 </style>
