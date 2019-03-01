@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="col-2">
-          <p>Illustration</p>
+          <p>Home</p>
         </div>
         <div class="col-2">
           <a href="https://www.naturalmythology.com/products" target="_blank"
@@ -18,18 +18,13 @@
           </a>
         </div>
         <div class="col-2">
-          <p>Comics</p>
+          <p>Contact</p>
         </div>
         <a class="col-2" @click="goAbout()">
           <a href="#" style="text-decoration: none; color: black;">
             <p>About</p>
           </a>
         </a>
-        <!-- <a class="col-2" @click="goAbout()">
-          <a href="#" style="text-decoration: none; color: black;">
-            <p>Contact</p>
-          </a>
-        </a> -->
       </div>
     </div>
 
@@ -48,10 +43,15 @@
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-light p-4 d-flex justify-content-around" style="align-items: flex-end; color: black;">
-            <span>Illustration</span>
-            <a href="https://www.naturalmythology.com/products" target="_blank"> <span>Shop</span></a>
-            <span>Comics</span>
-            <span @click="goAbout()">About</span>
+            <span>Home</span>
+            <a href="https://www.naturalmythology.com/products" target="_blank"> <span
+                style="text-decoration: none; color: black;">Shop</span></a>
+            <span>Contact</span>
+            <a @click="goAbout()">
+              <a href="#" style="text-decoration: none; color: black;">
+                <span>About</span>
+              </a>
+            </a>
           </div>
         </div>
       </div>
