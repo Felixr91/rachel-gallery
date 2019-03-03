@@ -1,8 +1,9 @@
 <template>
-  <div class="row about-bg d-flex justify-content-center row-height">
+  <div class="row about-bg d-flex justify-content-center row-height"
+    v-scroll-reveal.reset="{ delay: 250,  duration: 2000,}">
     <div class="layer">
       <div class="col-12 d-flex align-items-center about-height">
-        <div class="about-padding">
+        <div class="about-padding" v-scroll-reveal.reset="{ delay: 400,  duration: 5000,}">
           <h4 class="text-font">Artist Bio</h4>
           <hr class="about-line">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quis quasi, porro doloremque totam odio
@@ -97,7 +98,7 @@
 
   @media only screen and (max-height: 499px) {
     .about-height {
-      margin-top: 100px;
+      margin-top: 200px;
       height: 100vh;
     }
 

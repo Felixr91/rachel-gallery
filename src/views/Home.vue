@@ -2,7 +2,8 @@
   <div class="home">
     <!-- <navigation></navigation> -->
     <heroImage></heroImage>
-    <div class="d-flex justify-content-center" style="margin-top: 80px;">
+    <div class="d-flex justify-content-center" style="margin-top: 80px;"
+      v-scroll-reveal.reset="{ delay: 250,  duration: 2000,}">
       <div class="card-columns" style="width: 95%">
         <div v-for="image in Images" v-bind:key="image.name" class="d-flex justify-content-center">
           <div class="col pl-0 pr-0">

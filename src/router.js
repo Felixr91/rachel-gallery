@@ -5,7 +5,7 @@ import Home from './views/Home.vue'
 // @ts-ignore
 import aboutRachel from './views/AboutRachel.vue'
 //@ts-ignore
-import comics from './views/Comics.vue'
+import contact from './views/Contact.vue'
 
 Vue.use(Router)
 
@@ -30,6 +30,11 @@ export default new Router({
       path: '/aboutRachel',
       name: 'aboutRachel',
       component: aboutRachel
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: contact
     }
   ]
 })

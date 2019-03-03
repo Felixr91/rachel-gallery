@@ -5,24 +5,38 @@
       <div class="row container-fluid ml-0 mr-0 pt-3 d-flex align-items-center">
         <div class="col-4 d-flex" @click="goHome()">
           <a href="#" style="text-decoration: none; color: black;">
-            <p class="nav-name">R A C H E L &nbsp; H A Y S</p>
+            <p class="nav-name" v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+      origin: 'right',
+      distance: '300px' }">R A C H E L &nbsp; H A Y S</p>
           </a>
         </div>
-        <div class="col-2">
-          <p>Home</p>
-        </div>
+        <a class="col-2" @click="goHome()">
+          <a href="#" style="text-decoration: none; color: black;">
+            <p v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+              origin: 'left',
+              distance: '200px' }">Home</p>
+          </a>
+        </a>
         <div class="col-2">
           <a href="https://www.naturalmythology.com/products" target="_blank"
             style="text-decoration: none; color: black;">
-            <p>Shop</p>
+            <p v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+      origin: 'left',
+      distance: '200px' }">Shop</p>
           </a>
         </div>
-        <div class="col-2">
-          <p>Contact</p>
-        </div>
+        <a class="col-2" @click="goContact()">
+          <a href="#" style="text-decoration: none; color: black;">
+            <p v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+                      origin: 'left',
+                      distance: '200px' }">Contact</p>
+          </a>
+        </a>
         <a class="col-2" @click="goAbout()">
           <a href="#" style="text-decoration: none; color: black;">
-            <p>About</p>
+            <p v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+      origin: 'left',
+      distance: '200px' }">About</p>
           </a>
         </a>
       </div>
@@ -34,19 +48,31 @@
       <div class="pos-f-t" id="nav-small">
         <nav class="navbar navbar-light">
           <div class="col-m-6" @click="goHome()">
-            <p class="nav-name-small">R A C H E L &nbsp; H A Y S</p>
+            <p class="nav-name-small" v-scroll-reveal.reset="{ delay: 250,  duration: 2000, origin: 'right',
+      distance: '300px' }">R A C H E L &nbsp; H A Y S</p>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
+            v-scroll-reveal.reset="{ delay: 250,  duration: 2000,
+      origin: 'left',
+      distance: '300px' }" style="outline: 0;">
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-light p-4 d-flex justify-content-around" style="align-items: flex-end; color: black;">
-            <span>Home</span>
+            <a @click="goHome()">
+              <a href="#" style="text-decoration: none; color: black;">
+                <span>Home</span>
+              </a>
+            </a>
             <a href="https://www.naturalmythology.com/products" target="_blank"> <span
                 style="text-decoration: none; color: black;">Shop</span></a>
-            <span>Contact</span>
+            <a @click="goContact()">
+              <a href="#" style="text-decoration: none; color: black;">
+                <span>Contact</span>
+              </a>
+            </a>
             <a @click="goAbout()">
               <a href="#" style="text-decoration: none; color: black;">
                 <span>About</span>
@@ -57,6 +83,8 @@
       </div>
     </div>
   </div>
+
+
 </template>
 
 <script>
@@ -74,8 +102,12 @@
       },
       goHome() {
         this.$store.dispatch("goHome");
+      },
+      goContact() {
+        this.$store.dispatch("goContact");
       }
-    }
+    },
+
   }
 
 </script>
@@ -201,6 +233,8 @@
   .close {
     color: white !important;
   }
+
+
 
   /* bootstrap navbar css */
   .navbar.navbar-1 .navbar-toggler-icon {

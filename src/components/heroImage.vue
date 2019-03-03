@@ -1,10 +1,8 @@
 <template>
-
   <div class="row container-fluid ml-0 mr-0 hero-query">
     <div class="col-12 pt-3 handdiv">
     </div>
   </div>
-
 </template>
 
 <script>

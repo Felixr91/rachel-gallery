@@ -50,6 +50,9 @@ export default new Vuex.Store({
     },
     goHome() {
       router.push({ name: 'home' });
+    },
+    goContact() {
+      router.push({ name: 'contact' })
     }
   }
 })
