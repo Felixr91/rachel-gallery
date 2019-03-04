@@ -6,16 +6,16 @@
         <div class="about-padding" v-scroll-reveal.reset="{ delay: 400,  duration: 5000,}">
           <h4 class="text-font">Artist Bio</h4>
           <hr class="about-line">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quis quasi, porro doloremque totam odio
-            placeat
-            cum mollitia alias facere, voluptate maiores suscipit expedita nisi veniam culpa tenetur sed quisquam! Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Optio quis quasi, porro doloremque totam odio
-            placeat?</p>
+          <p>Rachel Hays is an illustrator and comics artist originally from the Western US. She's inspired by plant
+            folklore,
+            quilting patterns, gemstones, tarot, numerology, knots, and vintage lettering. Her illustrations reflect a
+            love of the
+            handmade, and the poetry of symbols.</p>
 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quis quasi, porro doloremque totam odio
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quis quasi, porro doloremque totam odio
             placeat
             cum mollitia alias facere, voluptate maiores suscipit expedita nisi veniam culpa tenetur sed quisquam! Lorem
-            cum mollitia alias facere, volupt.</p>
+            cum mollitia alias facere, volupt.</p> -->
         </div>
       </div>
     </div>
@@ -64,6 +64,38 @@
     width: 75%
   }
 
+  .about-height {
+    height: 90vh;
+
+  }
+
+  .row-height {
+    height: 100vh;
+  }
+
+  @media only screen and (max-height: 500px) {
+    .about-height {
+      height: 500px;
+      margin-top: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) and (max-height: 700px) {
+    .about-height {
+      height: 500px;
+      margin-top: 50px;
+    }
+
+    .row-height {
+      height: 700px;
+    }
+  }
+
+  .about-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   /* XL Screens */
 
   @media only screen and (min-width: 1200px) {
@@ -81,22 +113,9 @@
     }
   }
 
-  @media only screen and (min-height: 500px) {
-    .about-height {
-      height: 90vh;
-    }
 
-    .row-height {
-      height: 100vh;
-    }
 
-    .about-padding {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-  }
-
-  @media only screen and (max-height: 499px) {
+  /* @media only screen and (max-height: 499px) {
     .about-height {
       margin-top: 200px;
       height: 100vh;
@@ -108,7 +127,7 @@
     }
 
     .row-height {
-      height: 1000px;
+      height: 800px;
     }
-  }
+  } */
 </style>

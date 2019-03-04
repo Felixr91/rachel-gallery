@@ -39,7 +39,7 @@
       heroImage
     },
     mounted() {
-      let arr = this.$store.dispatch('getImages')
+      // let arr = this.$store.dispatch('getImages')
     },
     computed: {
       Images() {

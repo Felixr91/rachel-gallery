@@ -5,7 +5,7 @@
       <hr class="about-line">
       <h5 class="mt-5">Email</h5>
       <p>rachelhays@gmail.com</p>
-      <h5 class="mt-5">Post</h5>
+      <h5 class="mt-5">Mail</h5>
       <p>1111 South Orchard Street</p>
       <p>Boise, Idaho 83705</p>
       <p>suite #203</p>
