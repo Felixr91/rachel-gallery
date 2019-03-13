@@ -1,7 +1,7 @@
 module.exports = {
-  baseUrl: '/rachel-gallery',
+  // baseUrl: '/rachel-gallery',
   outputDir: 'docs',
-  publicPath: '/rachelhays'
+  // publicPath: '/rachelhays'
   // assetsDir: undefined,
   // runtimeCompiler: undefined,
   // productionSourceMap: undefined,
