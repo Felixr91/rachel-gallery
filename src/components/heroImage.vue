@@ -38,6 +38,16 @@
     }
   }
 
+  @media only screen and (min-width: 800px) and (min-height: 600px) {
+    .handdiv {
+      background-repeat: no-repeat;
+      background-size: 70vw;
+      background-image: url("../assets/hands.svg");
+      background-position: 50% 200px;
+      height: 1000px;
+    }
+  }
+
   @media only screen and (max-height: 800px) {
     .handdiv {
       height: 800px;
@@ -49,14 +59,34 @@
       background-repeat: no-repeat;
       background-size: 300px;
       background-image: url("../assets/handforwebsite.png");
-      background-position: center;
+      /* background-position: 50% 0%; */
+    }
+  }
+
+  @media only screen and (min-width: 300px) and (min-height: 350px) {
+    .handdiv {
+      background-position: 50% 40%;
     }
   }
 
 
-  @media only screen and (min-height: 401px) {
+  @media only screen and (min-height: 801px) and (min-width: 400px) {
     .hero-query {
       height: 90vh;
+    }
+
+    .handdiv {
+      background-position: 50% 40%;
+    }
+  }
+
+  @media only screen and (min-height: 900px) and (min-width: 950px) {
+    .hero-query {
+      height: 90vh;
+    }
+
+    .handdiv {
+      background-position: 50% 55%;
     }
   }
 </style>
