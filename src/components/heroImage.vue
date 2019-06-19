@@ -86,7 +86,9 @@
     }
 
     .handdiv {
-      background-position: 50% 55%;
+      background-position: center;
+      background-size: auto;
+      background-position-y: 120%;
     }
   }
 </style>
