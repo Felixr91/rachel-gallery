@@ -65,7 +65,7 @@
 
   @media only screen and (min-width: 300px) and (min-height: 350px) {
     .handdiv {
-      background-position: 50% 40%;
+      background-position: 50% 30%;
     }
   }
 
@@ -88,5 +88,9 @@
     .handdiv {
       background-position: 50% 55%;
     }
+  }
+
+  .hero-query{
+    min-height: 90vh;
   }
 </style>
